@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Welcome to PetFax</h1>
+        {% for pet in the_pets %}
+        <div style="background-color: blue">
+        <h2>{{ pet.pet_name }}</h2>
+        <img src=" {{ pet.pet_photo }}" alt="Photo of Pet"/>
+        <p>{{ pet.pet_fact }} </p>
+         {% endfor %} 
+    </body>
+</html>
